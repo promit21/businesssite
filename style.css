@@ -3,7 +3,10 @@
  /* Sahred Style */
  * {
      font-family: 'Poppins', sans-serif;
+     margin: 0%;
+     padding: 0px;
  }
+
 
  .primary-btn {
      font-size: 16px;
@@ -19,12 +22,19 @@
  }
 
 
- /* Start Header Part */
+ /* Start Header Menu Part */
+ .header-container {
+     background-color: #f1ebeb;
+     height: 60px;
+     padding-top: 10px;
 
+ }
 
  .menu {
+     max-width: 1250px;
+     margin: 0 auto;
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
      align-items: center;
 
  }
@@ -50,12 +60,18 @@
      height: 40px;
  }
 
+ /* Main Part Start */
 
+ /* header Banner */
  .header-content {
+     max-width: 1250px;
+     border: 2px solid black;
+     margin: 20px auto;
      display: flex;
      justify-content: space-around;
      align-items: center;
-     padding: 20px 150px;
+     padding-top: 20px;
+     padding-bottom: 30px;
  }
 
  .header-text h1 {
@@ -72,13 +88,15 @@
 
  .header-banner img {
      background-image: url('./images/Circle\ design.svg');
-     padding: 20px;
+     padding: 15px;
  }
 
- /* Main Part Start */
 
  /* sponsor section */
  .sponsor {
+     max-width: 1250px;
+     border: 2px solid black;
+     margin: 0 auto;
      text-align: center;
  }
 
@@ -91,15 +109,20 @@
  /* popular section */
 
  .popular-product {
+     max-width: 1250px;
+     margin: 50px auto;
      text-align: center;
-     margin: auto 100px;
+ }
+
+ .popular-product h1 {
+     font-size: 40px;
+     margin-bottom: 50px;
  }
 
  .popular-product-gallery {
      display: grid;
      gap: 15px;
      grid-template-columns: repeat(3, 1fr);
-     margin: 50px auto;
  }
 
  .product-card {
@@ -117,7 +140,7 @@
 
  .see-more-btn {
      position: relative;
-     left: 900px;
+     left: 950px;
      font-size: 26px;
      color: #E02C6D;
      border: 0;
@@ -127,9 +150,16 @@
  /* Product-Features */
 
  .Product-Features {
+     max-width: 1250px;
+     margin: 0 auto;
      display: flex;
      justify-content: space-around;
-     margin-top: 100px;
+     align-items: center;
+
+ }
+ .Product-Features-Img{
+    display: block;
+    margin: 0 auto;
  }
 
  .Product-Features-Text {
@@ -173,9 +203,10 @@
      .menu {
          flex-direction: column;
      }
-     .menu a{
-        font-size: 12px;
-        
+
+     .menu a {
+         font-size: 12px;
+
      }
 
      .header-content {
@@ -185,13 +216,14 @@
      }
 
      .header-banner img {
-         width: 100%;
+         width: 90%;
          margin-bottom: 50px;
      }
 
      .header-text h1 {
-        text-align: center;
+         text-align: center;
          width: 304px;
+         margin: 0 auto;
          font-size: 24px;
      }
 
@@ -200,36 +232,45 @@
          font-size: 16px;
          margin-top: 0px;
      }
-     .sponsor{
-        width: 550px;
+
+     .sponsor {
+         margin: 0;
+         padding: 0;
      }
-     .sponsor img{
-        width: 40px;
+
+     .sponsor img {
+         width: 50px;
      }
 
      .popular-product-gallery {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .Product-Features {
-        flex-direction: column-reverse;
-        margin: auto 30px;
-        margin-top: 100px;
-    }
-    .Product-Features-Text {
-        text-align: center;
-        width: 400px;
-        margin-bottom: 50px;
-    }
-    .see-more-btn {
-        position: relative;
-        left: 0;
-        font-size: 26px;
-        color: #E02C6D;
-        border: 0;
-        background: none;
-    }
+         display: grid;
+         gap: 10px;
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .Product-Features {
+         flex-direction: column-reverse;
+         margin: auto 30px;
+         margin-top: 100px;
+     }
+     .Product-Features Img{
+        width: 100%;
+     }
+
+     .Product-Features-Text {
+         text-align: center;
+         width: 350px;
+         margin-bottom: 50px;
+     }
+
+     .see-more-btn {
+         position: relative;
+         left: 0;
+         font-size: 26px;
+         color: #E02C6D;
+         border: 0;
+         background: none;
+     }
 
 
  }
